@@ -1,7 +1,7 @@
 
-function test() {
+function initAES() {
 	console.log("AES: Initiated");
 	console.log(Player.Reputation);
 }
 
-init();
+initAES();
