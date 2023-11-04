@@ -20,4 +20,9 @@ function initWait() {
 	*/
 }
 
-initWait()
+function test() {
+	console.log("TESTING");
+}
+
+initWait();
+test();
