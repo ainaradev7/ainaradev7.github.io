@@ -22,7 +22,7 @@ function initWait() {
 
 function test() {
 	console.log("TESTING");
-	Player.Reputation;
+	console.log(Player.Reputation);
 }
 
 initWait();
