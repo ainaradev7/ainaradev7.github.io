@@ -22,6 +22,7 @@ function initWait() {
 
 function test() {
 	console.log("TESTING");
+	Player.Reputation;
 }
 
 initWait();
