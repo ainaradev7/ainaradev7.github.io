@@ -2,10 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\AES",
+    "\\AES\\cmds",
     "\\AES\\commons",
-    "\\AES\\Events",
-    "\\AES\\Utils"
+    "\\AES\\events",
+    "\\AES\\utils"
   ],
-  "SelectedNode": "\\AES\\AES.js",
+  "SelectedNode": "\\AES\\package-lock.json",
   "PreviewInSolutionExplorer": false
 }
