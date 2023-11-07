@@ -27,5 +27,6 @@ One of mods you are using is using an old version of SDK. It will work for now b
     .experience-fill {
     background-color: #ea9999;
     color: #fff;
+    height: 100%;
     }
     `,B=document.createElement("style");B.innerHTML=E,document.head.appendChild(B),h.appendChild(b);let I=document.createElement("button");I.classList.add("fancy-button"),I.innerHTML="&#10003;",I.addEventListener("click",()=>{c&&(c(),r())});let R=document.createElement("button");R.classList.add("fancy-button"),R.innerHTML="&#10007;",R.addEventListener("click",()=>{u&&(u(),r())}),h.appendChild(I),h.appendChild(R),setTimeout(()=>{r()},S);let D=document.activeElement?.id==="InputChat",j=ElementIsScrolledToEnd("TextAreaChatLog"),e=document.getElementById("TextAreaChatLog");if(e!=null)return e.appendChild(h),j&&ElementScrollToEnd("TextAreaChatLog"),D&&ElementFocus("InputChat"),h;return null;function r(){h.remove()}}var xe=q.default.registerMod({name:"AES",fullName:"Ainaras Event Mod",version:"0.01",repository:"https://github.com/Ainaradev7/AES"});function ue(){console.log("AES: Initiated"),G("AES: Initiated"),U()}ue();})();
