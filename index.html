@@ -153,6 +153,10 @@
         overflow-wrap: anywhere;
       }
 
+      .script + .script {
+        margin-top: 10px;
+      }
+
       .preview {
         position: relative;
         min-height: 430px;
@@ -283,6 +287,11 @@
         line-height: 1.7;
       }
 
+      .links {
+        display: grid;
+        gap: 10px;
+      }
+
       footer {
         padding: 36px 0 52px;
         color: var(--muted);
@@ -335,9 +344,10 @@
             </p>
             <div class="actions">
               <a class="button" href="#install">Install guide</a>
-              <a class="button secondary" href="club-gaming/club-gaming.js">Open compiled script</a>
+              <a class="button secondary" href="club-gaming/beta/club-gaming.js">Open beta script</a>
             </div>
-            <div class="script">https://galia-bc.github.io/club-gaming/club-gaming.js</div>
+            <div class="script">Beta: https://galia-bc.github.io/club-gaming/beta/club-gaming.js</div>
+            <div class="script">Stable: https://galia-bc.github.io/club-gaming/stable/club-gaming.js</div>
           </div>
           <div class="preview" aria-hidden="true">
             <div class="orbital">
@@ -377,14 +387,28 @@
         <div class="shell install">
           <div>
             <h2>Install</h2>
-            <p class="lead">Use the compiled script URL in your preferred Bondage Club addon loader or userscript manager.</p>
+            <p class="lead">Use the stable or beta script URL in your preferred Bondage Club addon loader or userscript manager.</p>
           </div>
           <ol>
-            <li>Copy the script URL shown above.</li>
+            <li>Copy the stable or beta script URL shown above.</li>
             <li>Add it to your Bondage Club addon loader, or create a userscript that requires it.</li>
             <li>Reload Bondage Club and enter a chat room.</li>
             <li>Open a character dialog and use the floating GGC radial menu.</li>
           </ol>
+        </div>
+      </section>
+
+      <section id="channels">
+        <div class="shell install">
+          <div>
+            <h2>Release Channels</h2>
+            <p class="lead">Beta receives the newest builds first. Stable is kept separate so tested releases can stay calm while beta keeps moving.</p>
+          </div>
+          <div class="links">
+            <div class="script">Beta bookmarklet: javascript:(()=>{document.head.appendChild(Object.assign(document.createElement('script'),{src:'https://galia-bc.github.io/club-gaming/beta/club-gaming.js?v='+Date.now()}));})();</div>
+            <div class="script">Legacy beta bookmarklet: javascript:(()=>{document.head.appendChild(Object.assign(document.createElement('script'),{src:'https://galia-bc.github.io/galia.github.io/club-gaming/club-gaming.js?v='+Date.now()}));})();</div>
+            <div class="script">Stable bookmarklet: javascript:(()=>{document.head.appendChild(Object.assign(document.createElement('script'),{src:'https://galia-bc.github.io/club-gaming/stable/club-gaming.js?v='+Date.now()}));})();</div>
+          </div>
         </div>
       </section>
 
